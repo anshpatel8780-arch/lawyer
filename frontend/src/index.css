@@ -1,5 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #196ee6;
+  --color-primary-dark: #0d4ba0;
+  --color-secondary: #0e131b;
+  --color-danger: #ef4444;
+  --color-success: #22c55e;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #111821;
+  --color-surface-dark: #1a2432;
+  --color-border-dark: #243347;
+  --color-text-main: #1c180d;
+  --color-text-muted: #9c8749;
+  --color-border-color: #e8e2ce;
+  
+  --font-display: "Public Sans", sans-serif;
+  
+  --breakpoint-xs: 320px;
+}
 
 @layer base {
   /* Global responsive styles */

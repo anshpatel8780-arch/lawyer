@@ -27,9 +27,9 @@ const Navbar = () => {
                 {/* Desktop Nav Links */}
                 <nav className="hidden lg:flex items-center gap-6">
                     {['Find a Lawyer', 'Practice Areas', 'Legal Advice', 'About Us'].map((item) => (
-                        <a key={item} href="#" className="text-xs sm:text-sm font-bold text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors whitespace-nowrap">
+                        <button key={item} className="text-xs sm:text-sm font-bold text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors whitespace-nowrap cursor-pointer">
                             {item}
-                        </a>
+                        </button>
                     ))}
                 </nav>
 
@@ -82,14 +82,13 @@ const Navbar = () => {
                     <div className="px-3 py-3 space-y-2">
                         <nav className="flex flex-col gap-2">
                             {['Find a Lawyer', 'Practice Areas', 'Legal Advice', 'About Us'].map((item) => (
-                                <a 
+                                <button 
                                     key={item} 
-                                    href="#" 
-                                    className="text-sm font-bold text-slate-700 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 px-3 py-2 rounded-lg transition-colors block"
+                                    className="w-full text-left text-sm font-bold text-slate-700 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 px-3 py-2 rounded-lg transition-colors block"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     {item}
-                                </a>
+                                </button>
                             ))}
                         </nav>
                         
