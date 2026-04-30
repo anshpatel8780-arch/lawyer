@@ -55,7 +55,7 @@ const Home = () => {
                             <h3 className="text-lg xs:text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Practice Areas</h3>
                             <p className="text-slate-500 text-xs xs:text-sm mt-1">Select a category to find specialized help</p>
                         </div>
-                        <a className="text-xs xs:text-sm font-bold text-primary hover:underline underline-offset-4 decoration-2 mt-3 xs:mt-0">View All</a>
+                        <button onClick={() => navigate('/auth')} className="text-xs xs:text-sm font-bold text-primary hover:underline underline-offset-4 decoration-2 mt-3 xs:mt-0 cursor-pointer">View All</button>
                     </div>
                     <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 xs:gap-4 sm:gap-5 md:gap-6">
                         {[
@@ -101,7 +101,7 @@ const Home = () => {
                             <h3 className="text-lg xs:text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Top Rated Lawyers</h3>
                             <p className="text-slate-500 text-xs xs:text-sm mt-1">Recommended by hundreds of clients</p>
                         </div>
-                        <a className="text-xs xs:text-sm font-bold text-primary hover:underline mt-3 xs:mt-0 cursor-pointer" onClick={() => navigate('/auth')}>See All</a>
+                        <button className="text-xs xs:text-sm font-bold text-primary hover:underline mt-3 xs:mt-0 cursor-pointer" onClick={() => navigate('/auth')}>See All</button>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
                         {[
