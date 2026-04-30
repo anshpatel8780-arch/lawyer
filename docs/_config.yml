@@ -1,0 +1,7 @@
+theme: jekyll-theme-minimal
+title: LawConnect
+description: Full Stack Lawyer Consultation Platform
+show_downloads: false
+github:
+  repository_url: https://github.com/anshpatel8780-arch/lawyer
+  is_project_page: false
